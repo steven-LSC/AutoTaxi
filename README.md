@@ -1,11 +1,35 @@
 # AutoTaxi
 
-使用Raspberry Pi開發的自動化計程車系統，Demo影片請見：https://youtu.be/ZHJN7UXx9a0
+This is an AI automated taxi system that we hope can be merged with self-driving cars. There are two modes in total: patrol model and order mode.
 
-## 使用技術
-AWS S3、AWS Rekognition、OpenPose、Keras、TensorFlow、LineBot
+* Line Chatbot: We use Line to build user interface, including: uploading selfies, account management, and interactive messages.
 
-## 系統介紹
-* 巡邏模式：像計程車一樣繞，遇到在招手的會員就會停下來，然後寄訊息給會員
-* 叫車模式：接收到客戶訂單後，車子出發，過程中透過人臉比對找到客戶
-## 
+* Patrol mode: While the self-drving car is patroling, it will detect the member who is hailing, and then confirm the intention through Line chatbot.
+
+* Order mode : After getting the order from a member, the car will departure and find the member. 
+
+We control the Raspberry Pi car to simulate the self-driving car, and then build the entire system through a camera, AWS, and AI models.
+
+
+### Demo Video
+https://youtu.be/ZHJN7UXx9a0
+
+### Operation Logic
+
+#### Patrol Mode
+![image](https://github.com/steven-LSC/AutoTaxi/blob/main/patrol%20mode%20diagram.png)
+
+#### Order Mode
+![image](https://github.com/steven-LSC/AutoTaxi/blob/main/oreder%20mode%20diagram.png)
+
+#### Member Management
+![image](https://github.com/steven-LSC/AutoTaxi/blob/main/member%20management%20diagram.png)
+
+### Tech
+* Respberry Pi
+* Line Chatbot
+* OpenPose
+* AWS S3
+* AWS Rekognition
+* Deep Learning Model for face comparison
+* Object Detection model
