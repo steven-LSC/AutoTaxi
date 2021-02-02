@@ -1,6 +1,6 @@
 # AutoTaxi
 
-<img src="https://github.com/steven-LSC/AutoTaxi/blob/main/Logo.png" width="200" height="200">
+<img src="https://github.com/steven-LSC/AutoTaxi/blob/main/Logo.png" width="300" height="300">
 
 This is an AI automated taxi system that we hope can be merged with self-driving cars. There are two modes in total: patrol model and order mode.
 
