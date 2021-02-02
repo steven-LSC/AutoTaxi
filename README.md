@@ -1,5 +1,7 @@
 # AutoTaxi
 
+![image](https://github.com/steven-LSC/AutoTaxi/blob/main/Logo.png)
+
 This is an AI automated taxi system that we hope can be merged with self-driving cars. There are two modes in total: patrol model and order mode.
 
 * Line Chatbot: We use Line to build user interface, including: uploading selfies, account management, and interactive messages.
